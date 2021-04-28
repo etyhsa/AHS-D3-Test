@@ -4,7 +4,7 @@ const d3Tableau = () => {
 		return tableau.extensions.initializeAsync();
 	};
 
-	//getDataTable froma certain Sheet within the Dashboard
+	//getDataTable from a certain Sheet within the Dashboard
 	const getDataTable = (sheetName) => {
 		const worksheets =
 			tableau.extensions.dashboardContent.dashboard.worksheets;
@@ -144,7 +144,7 @@ const d3Tableau = () => {
 
 			console.log(filtered_d3_data);
 
-			drawData(filtered_d3_data);
+			d3_functions(filtered_d3_data, true, nodeSheet);
 		}
 
 		//add Listeners
@@ -160,17 +160,24 @@ const d3Tableau = () => {
 			linksFilterChangedHandler()
 		);
 
-		d3_functions(d3_data);
+		d3_functions(d3_data, false);
 	}
 
 	getData();
 
-	const d3_functions = (d3_data) => {
+	d3_functions = (d3_data, svgCreated) => {
 		//////////////////////////////////////////////////////
 		// Developed by Moushir Elbishouty - AHS - 2021 March
+		// Developed by Moushir Elbishouty - AHS - 2021 March
 		//////////////////////////////////////////////////////
-		d3.select("svg").remove();
+		if (svgCreated) {
+			d3.selectAll("svg > *").remove();
+			console.log("remove svg");
+		}
+
 		var svg = d3.select("svg");
+
+		console.log("svg", svg);
 
 		var width = +svg.attr("width");
 		var height = +svg.attr("height");
