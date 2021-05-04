@@ -8,7 +8,7 @@
 4) Open the workbook, add the extension to the "Alberta Health Infections Report" Dashboard by finding the .trex file.
 5) Connnect Workbook To Datasource (**see below**)
 6) Publish the Workbook to Tableau Server
-7) Whitelist the github pages URL on server.
+7) Whitelist the github pages URL on Tableau server.
 
 **Datasources**:
 1) The first data source is named VOC_Nodes, which is the "nodes" data from VOC_ALL_Links_No_Null.json.
