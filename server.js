@@ -1,3 +1,5 @@
+//Only necessary if developper wants to use a local server to make changes.
+
 var connect = require("connect");
 var serveStatic = require("serve-static");
 
