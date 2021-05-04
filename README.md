@@ -1,4 +1,4 @@
-**Implementing workbook on a server for the first time.**
+**Implementing the extension enabled workbook on a server for the first time.**
 
 ![image](https://user-images.githubusercontent.com/77290618/117015825-16bb3d00-acc0-11eb-9d97-5f618585ab42.png)
 
