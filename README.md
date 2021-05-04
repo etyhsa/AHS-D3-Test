@@ -4,10 +4,13 @@ Implementing workbook on a server for the first time.
 2) Download the workbook and .trex file
 3) Change the <URL> paramater to the github pages link
 4) Open the workbook, add the extension to the "Alberta Health Infections Report" Dashboard by finding the .trex file.
-5) Publish the Workbook to Tableau Server
-6) Whitelist the github pages URL on server.
+5) Connnect Workbook To Datasource (**see below**)
+6) Publish the Workbook to Tableau Server
+7) Whitelist the github pages URL on server.
 
-Optional: Datasources. You can either embed the data in the workbook or publish 2 datasets to tableau server. 
-The first data source is named VOC_Nodes 
+**Datasources**:
+1) The first data source is named VOC_Nodes, which is the "nodes" data from VOC_ALL_Links_No_Null.json.
+2) The second data source is named VOC_Links, which is the "links" data from VOC_ALL_Links_No_Null.json
+3) Publish them to the server, and 
 
-
+![image](https://user-images.githubusercontent.com/77290618/117015524-d0fe7480-acbf-11eb-9bbc-124251965345.png)
